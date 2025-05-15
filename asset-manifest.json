@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https%EF%BC%9A//Zxy-0830.github.io/conponent/static/css/main.2cc0e597.css",
-    "main.js": "/https%EF%BC%9A//Zxy-0830.github.io/conponent/static/js/main.eb4c81dc.js",
-    "index.html": "/https%EF%BC%9A//Zxy-0830.github.io/conponent/index.html",
-    "main.2cc0e597.css.map": "/https%EF%BC%9A//Zxy-0830.github.io/conponent/static/css/main.2cc0e597.css.map",
-    "main.eb4c81dc.js.map": "/https%EF%BC%9A//Zxy-0830.github.io/conponent/static/js/main.eb4c81dc.js.map"
+    "main.css": "/component/static/css/main.2cc0e597.css",
+    "main.js": "/component/static/js/main.eb4c81dc.js",
+    "index.html": "/component/index.html",
+    "main.2cc0e597.css.map": "/component/static/css/main.2cc0e597.css.map",
+    "main.eb4c81dc.js.map": "/component/static/js/main.eb4c81dc.js.map"
   },
   "entrypoints": [
     "static/css/main.2cc0e597.css",

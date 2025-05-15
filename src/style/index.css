@@ -1,13 +1,145 @@
-body {
+@import './reset.css';
+
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Share Tech', sans-serif;
+  background-color: #eef6fc;
+  color: #333;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: #dce7f1;
+  border-bottom: 1px solid #c0cddb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .container > nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+header .container > nav > li:first-child {
+  margin-right: auto;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #5A2D82;
+}
+header .container > nav > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+header .container > nav > ul > li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+header .container > nav > ul > li a:hover {
+  background-color: #cbd8e3;
+  color: #5A2D82;
+}
+
+header + div {
+  background-color: #e8f1fa;
+  border: 1px solid #c0cddb;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+header + div h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.25rem;
+  color: #222;
+}
+header + div p {
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+header + div button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  padding: 0.85rem 2rem;
+  border-radius: 25px;
+  border: 2px solid #5A2D82;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+header + div button + button {
+  margin-left: 1rem;
+}
+header + div .primary {
+  background-color: #5A2D82;
+  color: #fff;
+}
+header + div .secondary {
+  background-color: #fff;
+  color: #5A2D82;
+}
+header + div .primary:hover {
+  background-color: #48205c;
+}
+header + div .secondary:hover {
+  background-color: #f2eafb;
+}
+
+.photos {
+  background-color: #f0f7fc;
+  border: 1px solid #c0cddb;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  flex: 1;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.photo-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+.photo-grid img:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #dce7f1;
+  border-top: 1px solid #c0cddb;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+footer p {
+  color: #555;
+  font-size: 1.125rem;
 }

@@ -1,7 +1,7 @@
 {
   "name": "conponent",
   "version": "0.1.0",
-  "homepage": "https://github.com/Zxy-0830/conponent.git",
+  "homepage": "https：//Zxy-0830.github.io/conponent",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
